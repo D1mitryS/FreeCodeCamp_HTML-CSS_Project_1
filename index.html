@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1 id="title">My survey</h1>
+            <p id="description">You have an opportunity to take part in a survey</p>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <form action="https://nourl.com" id="survey-form" method="post">
+                <fieldset>
+                    <legend class="visually-hidden">Personal info</legend>
+                    <label for="name" id="name-label">Name
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    </label>
+                    <label for="email" id="email-label">Email
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </label>
+                    <label for="number" id="number-label">Age
+                        <input type="number" id="number" name="age" min="13" max="120" placeholder="Enter your age">
+                    </label>
+                    <label for="dropdown">How did you hear about us?
+                        <select id="dropdown" name="dropdown">
+                            <option value="">Select option</option>
+                            <option value="drop-1" selected>Googled</option>
+                            <option value="drop-2">Googled but backward</option>
+                        </select>
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend class="visually-hidden">Options and notifications</legend>
+                    <div class="radios">
+                        <label for="radio-1">
+                            <input type="radio" name="radio" id="radio-1" value="radio-1" checked>
+                            <span class="radio-option">1</span>
+                        </label>
+                        <label for="radio-2">
+                            <input type="radio" name="radio" id="radio-2" value="radio-2">
+                            <span class="radio-option">2</span>
+                        </label>
+                        <label for="radio-3">
+                            <input type="radio" name="radio" id="radio-3" value="radio-3">
+                            <span class="radio-option">3</span>
+                        </label>
+                    </div>
+                    <div class="checkboxes">
+                        <label for="check-1">
+                            <input type="checkbox" id="check-1" name="checkbox-1" value="checkbox-1" checked required>
+                            I'm agreed to privacy policy
+                        </label>
+                        <label for="check-2">
+                            <input type="checkbox" id="check-2" name="checkbox-2" value="checkbox-2">
+                            I'd like to recive email notifications
+                        </label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend class="visually-hidden">Additional info</legend>
+                    <label for="bio">Provide a bio:
+                        <textarea name="bio" id="bio" cols="30" rows="10"
+                            placeholder="I like coding on the beach..."></textarea>
+                    </label>
+                </fieldset>
+                <input type="submit" id="submit" value="Submit">
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>
