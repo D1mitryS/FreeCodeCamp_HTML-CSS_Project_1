@@ -1,0 +1,127 @@
+/*RESET*/
+html,
+body,
+h1,
+h2,
+p,
+fieldset,
+input,
+label,
+textarea,
+form {
+  padding: 0;
+  margin: 0;
+  border: 0
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 24px;
+}
+
+body {
+  background-color: #373787;
+  color: #f3f3f3;
+  padding: 2rem 0;
+}
+
+/*CONTAINER*/
+.container {
+  width: 50%;
+  max-width: 600px;
+  min-width: 300px;
+  margin: 0 auto;
+}
+
+/*VISUALLY-HIDDEN*/
+.visually-hidden {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+/*FIELDSETS*/
+fieldset:first-of-type {
+  padding-bottom: 2rem;
+}
+
+fieldset:not(fieldset:first-of-type) {
+    padding: 2rem 0;
+  }
+
+fieldset:not(fieldset:last-of-type) {
+  border-bottom: 1px solid #f3f3f3;
+}
+
+fieldset label {
+  display: block;
+}
+
+/*HEADER*/
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/*MAIN*/
+main .container {
+  background-color: #2a2a49;
+  padding: 2rem;
+}
+
+/* FIELDSET-1 */
+fieldset:first-of-type input {
+  width: 100%;
+  margin: .5rem 0 1rem;
+  font-size: .7rem;
+  min-height: 2rem;
+  padding: .5rem
+}
+
+select,
+textarea {
+  width: 100%;
+  margin-top: .5rem;
+  font-size: .7rem;
+  padding: .5rem
+}
+
+/*FIELDSET-2*/
+.radios {
+  margin-bottom: 1rem;
+}
+
+fieldset:nth-of-type(2) label:not(label:last-of-type) {
+  margin-bottom : .5rem;
+}
+
+.radios .radio-option::before {
+  content: "I prefer option ";
+}
+
+/* FIELDSET-3 */
+textarea {
+  height: 6rem;
+}
+
+/*SUBMIT*/
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  min-width: 204px; 
+  margin: 0 auto;
+  padding: .5rem;
+  font-size: .7rem;
+  font-weight: bold;
+}
